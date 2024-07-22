@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FILTERGRAPH>
+  <FILTER uid="1" x="0.5" y="0.1" useARA="0">
+    <PLUGIN name="Audio Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="246006c0"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="2" isShell="0" hasARAExtension="0" uid="246006c0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="2" x="0.25" y="0.1" useARA="0">
+    <PLUGIN name="MIDI Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="a9e4f9eb"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="0" isShell="0" hasARAExtension="0" uid="a9e4f9eb"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="3" x="0.5" y="0.9" useARA="0">
+    <PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="724248cb"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="2"
+            numOutputs="0" isShell="0" hasARAExtension="0" uid="724248cb"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="4" x="0.25" y="0.9" useARA="0">
+    <PLUGIN name="MIDI Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="9d5bbb00"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="0" isShell="0" hasARAExtension="0" uid="9d5bbb00"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="5" x="0.58" y="0.4032258064516129" useARA="0" uiLastX_Normal="253"
+          uiLastY_Normal="304" uiopen_Normal="1">
+    <PLUGIN name="SimpleEQ" format="VST3" category="Fx" manufacturer="yourcompany"
+            version="1.0.0" file="C:\Program Files\Common Files\VST3\F3X\SimpleEQ\SimpleEQ.vst3\Contents\x86_64-win\SimpleEQ.vst3"
+            uniqueId="196a22b" isInstrument="0" fileTime="190dc9814d6" infoUpdateTime="190dcb83338"
+            numInputs="2" numOutputs="2" isShell="0" hasARAExtension="0"
+            uid="e95a1e59"/>
+    <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="8" x="0.60375" y="0.2217741935483871" useARA="0" uiLastX_Normal="2083"
+          uiLastY_Normal="209" uiopen_Normal="1">
+    <PLUGIN name="Surrealistic MG-1 Plus" format="VST3" category="Instrument"
+            manufacturer="Cherry Audio" version="1.4.0" file="C:\Program Files\Common Files\VST3\Cherry Audio\Surrealistic MG-1 Plus.vst3"
+            uniqueId="bb4f3b78" isInstrument="1" fileTime="18507b74750" infoUpdateTime="190dcb83338"
+            numInputs="0" numOutputs="2" isShell="0" hasARAExtension="0"
+            uid="53dd8a0e"/>
+    <STATE>2413.VMjLgPVB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DyMxTiK4UDaisVTwPkdEYzXqEDTtfDSGoUcickVzMlQUcVRF4RPDYmKoUUahgWUrEldQUEVnEDTtTDQt3hKt3hKnEEUZgWTWQlKDAkKBgjUUk2ZrEVavPDUEslZgAURWkUdUYzXtPDTtLjaxDVcvXjKAolKA4hKt3hKt3hK1sRdh4FNwLldEwFVtPDTtLjcVgUdQczXmkjQtDDUP4hKt3hKtPzUic1cVokdqcjKAQETtDjKt3hKDYlKoUUahYWRWkUdUYzXtPjcBw1ZFE1Z3TTX00jUXo2ZwDFcAAkKBQkKtXWRWkUdUYzXksFQQ4BQl4RQt3RVu0zQhIWQVQlSEYUXqEDTtHDUt3BcEYUXqEDTtHDUt3RZEYzXqMVLgg2ZG4RPHAUPtvTLgI2cVkUZQckV0QiQtDDRPEjKxYUVzLlLggWTwHlKDYlKE4hKgUWSVgkdqESXzEDTtHDUt3hcIcUV4UkQiQ0ZGI1ZAAkKEQjKt3hKt3BZqomXDUkQgsVTWkkZYQEVoEkLgg2ZGQEdUEiXqE0QtDDQ14BZqomXEEkUZoWUFkkQEECV5gCahQSPqI1ZMcUV5EDTtDDSt3hcQcjKAQkKhgWUwH1ZQIyUFslQgsFNqU0ZIIiXugCag4BQPETPD4hKt3hKhgWUwH1ZQ01TmAiUY4BQl4RQt3hX3UULhsVTGUEMAcUVtPDTAEjKt3hKtXWX1E0UZUGMVgkbyQUVzLlLggWTwHlKDYlKE4hchoWQrElZEYTX0QiUYQUUVElc3XjKAolKA4hKt3hKt3hK1sxTtLjKGkkKDAURTUUag8FMwjkY5IDRTgCagsVP3QUcU0lXoUULh4BQPIDQt3hKt3hKt3hKt3BUU0VXuQSLYYldBgDT3XTXzDzQZUGMVQlKDAkPDI2QEQGYTMSMQYySMUTLhoWUrIlYXASXxU0UgsVPP4RRPYFaYwVVrkEaYg2J5oWXpEjTKYFTvDFcUYDRSgiUigWSVkUdAIETygiUiQWTG4RPp4RPt3hKt3hKt3hKt.0T0EkQHMmKBQUc2YEYlQDUgUWUsEldAAkKIAkKt3hKt3hKt3hKtnmdgoVPRsjYXQkVxE0UYgWPRA0b3X0XzE0QtDjZtDjKt3hKt3hKt3hKPMUcQYDRy4BdRs1ZsgUcEwlXpEDdQI2ZFk0ZAIETygiUiQWTG4RPp4RPt3hKt3hKt3hKt3RU0QiUYYFSvDFLIICVqEjPUICNFgzbtHTTqE0UiQWUF4RPp4RP1D0YwcTQzQld3jGT0QiQiUWUsIlY5IDRRsVLhsVPBU0avXUVtPDTBQjKt3hKt3hKt3hKPMDNrEld3X0X3EjTKYFVTgkb2YDRTslUgsVPP4RRP4hKt3hKt3hK5klKYQkVxE0UYgWPRsjYLQ0X5gCaYwVPnEEdUYkXvTEagk1ZG4RPp4RPt3hKt3hKtH1UCoVTucmQisVRGgzbtHDUqUTLZYFUTElcmYEV4sVLh4BQPIDQt3hKt3hKt3hKt3hQqYTX5UEahYldBgzP3vVX5giUigWUFkkYLQ0X5gCaYwVPP4RRP4hKt3hKt3hKt3hK5QkVyTEahYldBgDU3vVXqEDdSQWUF4RPp4RPt3hKt3hKt3hcqL0Tuc1UYgWPRsjYPASXzUkQHQ0XxDlKDAkPD4hKt3hKt3hKtrxSMslQjsVRGgzbtf1T0sVLhsVPP4RRP4hKt3hKt3hKt3hK5QkVyTEahYldBgjPUYTXxEjPUUGMVkkKDAkPD4hKt3hKt3hKt3hKMslQjsVRGgzbtHDU0cmUj4BQPIDQt3hKt3hKt3hKt3RS3XTVlomPHIUQFM1ZAAkKIAkKt3hKt3hKt3RQt.idgoVPRsjY5oWXpEDdU4VUVkkbAIUTzUDaXIWUF4RPp4RPt3hKt3hKt3hKt.0T0EkQHMmKRAELQISXlwjdgQWTxDFLIcDRTkzUZ01XVkEdAAkKIAkKt3hKt3hKt3hKtnmdgoVPRsjYhUEVwTkQHM0YVgkcUYjKAolKA4hKt3hKt3hKt3hKUUGMVkkYLASXvjjLXsVP3MEcUYDRy4BdSkVTWgULUYjKAolKA4hKt3hKt3hK1sxPTU2cVQlY5IDRO0jQicVVWkkKDAkPD4hKt3hKt3hKtrxSTgCagsVP3QUcU0lXoUkQHQ0XxDlY5IDRO0jQicVVWkkKDAkPD4hKt3hKt3hKt3BTMUTLhoWUrIlYPslXmQSLhYGNwH1ZAAkKIAkKt3hKt3hKt3hKtD0Zh81Xwj0ZIcDRMgiQYsVPP4RRP4hKt3hKt3hKt3hKynWX5UkQHAURWoUcIckV5s1QtDjZtDjKt3hKt3hKtX2JSMUcQYDRy4hTQMSTWkEdzXEVxEDdTQCMwfkKDAkPD4hKt3hKt3hKt3hKTgCagsVP3QUcU0lXoUkQH8DMVkkY5IDRSsVagkVPnwTNDMjKAolKA4hKt3hKt3hKt3hYQ81cFM1ZIcDRy4BdRs1ZsgUcEwlXpEjPUgWQwfUbqwVXsEDTtjDTt3hKt3hKt3hKt3RS5EFcQISXvjzQHMmKRMUcQYUVtPDTBQjKt3hKt3hKt3hKtPENrE1ZAgGU0UUahkVUFgDUiISXlomPHcUQrM1ZAgGUtUjQhsVPP4RRP4hKt3hKt3hKt3hKPASXzUkQHMENVMFdMYUVlciZgsVPRsjYhUEVwTkQHM0YVgkcUYjKAolKA4hKt3hKt3hKt3hKTU2cVQlY5IDRWUDaisVP3QkaEYjXqEDTtjDTt3hKt3hKt3hK2rBS5EFcQISXvjzQHMmK3QELMczXmsFag4BQPIDQt3hKt3hKt3hKq7Da3DCVvzTaTsVSWkkdAAkKAwjKtLWPWkkKDYlK1slQik1YrA0ZzXTVRUDag0VUF4RPTAkK14hKt3BUxH1ZMcDUuEkLX4VRTkEcQYjKAQjYtDDQ1gUczXzX3giQgkWPt3hK5YEV1EzUZQ2XwHlKt3hKt3hKt3hKt3hKtXlTU0DUQAURWoULEYzXqEEUXoWQF4RPDYFTzDzUXkWSG4RPDYmKtnWPt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgEOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO..</STATE>
+    <LAYOUT>
+      <INPUTS/>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <CONNECTION srcFilter="2" srcChannel="4096" dstFilter="8" dstChannel="4096"/>
+  <CONNECTION srcFilter="5" srcChannel="0" dstFilter="3" dstChannel="0"/>
+  <CONNECTION srcFilter="5" srcChannel="1" dstFilter="3" dstChannel="1"/>
+  <CONNECTION srcFilter="8" srcChannel="0" dstFilter="5" dstChannel="0"/>
+  <CONNECTION srcFilter="8" srcChannel="1" dstFilter="5" dstChannel="1"/>
+</FILTERGRAPH>
