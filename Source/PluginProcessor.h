@@ -115,27 +115,29 @@ private:
 
         switch(slope)
         {
-        case Slope_48:
-            {
-                update<3>(chain, coefficients);
-            }
-
+            case Slope_48:
+                {
+                    update<3>(chain, coefficients);
+                }
             case Slope_36:
             {
                 update<2>(chain, coefficients);
             }
-
             case Slope_24:
             {
                 update<1>(chain, coefficients);
             }
-
             case Slope_12:
             {
                 update<0>(chain, coefficients);
             }
         }
     }
+
+    void updateLowCutFilters(const ChainSettings& chainSettings);
+    void updateHighCutFilters(const ChainSettings& chainSettings);
+
+    void updateFilters();
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleEQAudioProcessor)
 };
