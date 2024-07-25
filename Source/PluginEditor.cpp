@@ -36,9 +36,9 @@ void ResponseCurveComponent::parameterValueChanged(int parameterIndex, float new
 
 void ResponseCurveComponent::timerCallback()
 {
-    if (parametersChanged.compareAndSetBool(false, true))
+    if( parametersChanged.compareAndSetBool(false, true) )
     {
-        DBG("params changed");
+        DBG( "params changed" );
         //update the monochain
         auto chainSettings = getChainSettings(audioProcessor.apvts);
         auto peakCoefficients = makePeakFilter(chainSettings, audioProcessor.getSampleRate());
@@ -54,7 +54,7 @@ void ResponseCurveComponent::timerCallback()
     }
 }
 
-void ResponseCurveComponent::paint(juce::Graphics& g)
+void ResponseCurveComponent::paint (juce::Graphics& g)
 {
     using namespace juce;
     // (Our component is opaque, so we must completely fill the background with a solid colour)
@@ -128,6 +128,14 @@ void ResponseCurveComponent::paint(juce::Graphics& g)
 //==============================================================================
 SimpleEQAudioProcessorEditor::SimpleEQAudioProcessorEditor(SimpleEQAudioProcessor& p)
     : AudioProcessorEditor(&p), audioProcessor(p),
+    peakFreqSlider(*audioProcessor.apvts.getParameter("Peak Freq"), "Hz"),
+    peakGainSlider(*audioProcessor.apvts.getParameter("Peak Gain"), "dB"),
+    peakQualitySlider(*audioProcessor.apvts.getParameter("Peak Quality"), ""),
+    lowCutFreqSlider(*audioProcessor.apvts.getParameter("LowCut Freq"), "Hz"),
+    highCutFreqSlider(*audioProcessor.apvts.getParameter("HighCut Freq"), "Hz"),
+    lowCutSlopeSlider(*audioProcessor.apvts.getParameter("LowCut Slope"), "dB/Oct"),
+    highCutSlopeSlider(*audioProcessor.apvts.getParameter("HighCut Slope"), "dB/Oct"),
+
     responseCurveComponent(audioProcessor),
     peakFreqSliderAttachment(audioProcessor.apvts, "Peak Freq", peakFreqSlider),
     peakGainSliderAttachment(audioProcessor.apvts, "Peak Gain", peakGainSlider),
