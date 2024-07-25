@@ -225,7 +225,8 @@ ChainSettings getChainSettings(juce::AudioProcessorValueTreeState& apvts)
 Coefficients makePeakFilter(const ChainSettings& chainSettings, double sampleRate)
 {
     return juce::dsp::IIR::Coefficients<float>::makePeakFilter(sampleRate,
-        chainSettings.peakFreq, chainSettings.peakQuality,
+        chainSettings.peakFreq, 
+        chainSettings.peakQuality,
         juce::Decibels::decibelsToGain(chainSettings.peakGainInDecibels));
 }
 

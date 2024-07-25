@@ -57,7 +57,6 @@ void updateCutFilter(ChainType& chain,
     const CoefficientType& coefficients,
     const Slope& slope)
 {
-
     chain.template setBypassed<0>(true);
     chain.template setBypassed<1>(true);
     chain.template setBypassed<2>(true);
@@ -65,22 +64,22 @@ void updateCutFilter(ChainType& chain,
 
     switch (slope)
     {
-        case Slope_48:
-        {
-            update<3>(chain, coefficients);
-        }
-        case Slope_36:
-        {
-            update<2>(chain, coefficients);
-        }
-        case Slope_24:
-        {
-            update<1>(chain, coefficients);
-        }
-        case Slope_12:
-        {
-            update<0>(chain, coefficients);
-        }
+    case Slope_48:
+    {
+        update<3>(chain, coefficients);
+    }
+    case Slope_36:
+    {
+        update<2>(chain, coefficients);
+    }
+    case Slope_24:
+    {
+        update<1>(chain, coefficients);
+    }
+    case Slope_12:
+    {
+        update<0>(chain, coefficients);
+    }
     }
 }
 
